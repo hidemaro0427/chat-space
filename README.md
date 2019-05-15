@@ -25,6 +25,7 @@ Things you may want to cover:
 
 
 comments テーブル
+
 |Column|Type|Options|
 |------|----|-------|
 |user_id|integer|null: false, foreign,key true|
@@ -35,6 +36,7 @@ belongs_to :user
 belongs_to :group
 
 usersテーブル
+
 |Column|Type|Options|
 |------|----|-----|
 |id|integer|null: fales, unique: true|
@@ -45,6 +47,7 @@ has_many :comments
 has_many :groups
 
 groupテーブル
+
 |Column|Type|Options|
 |------|----|-------|
 |user_id|integer|null: false, foreign_key: true|
