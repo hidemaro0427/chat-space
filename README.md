@@ -29,7 +29,8 @@ comments テーブル
 |Column|Type|Options|  
 |------|----|-------|   
 |user_id|integer|null: false, foreign,key true|  
-|image|text|  
+|group_ip|integer|null: false, foreign,key true|
+|image|string|  
 |text|text|  
 Association　　
 belongs_to :user　　
@@ -55,3 +56,13 @@ groupテーブル
 Association　　
 has_many :users　　
 has_many :comments　　
+
+membersテーブル
+
+|Column|Type|Options|  
+|------|----|-------|  
+|user_id|integer|null: false, foreign_key: true|  
+|group_id|integer|null: false, foreign_key: true|  
+Association  
+belongs_to :group  
+belongs_to :user  
