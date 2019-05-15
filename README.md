@@ -44,15 +44,15 @@ usersテーブル
 |E-maill|string|null: fales, unique: true|    
 |name|string|null: fales|  
 Association　　　
-has_many :comments　　
-has_many :groups　　
+has_many :comments
+has_many :groups,through: members
+has_many :members　
 
 groupテーブル
 
 |Column|Type|Options|   
 |------|----|-------|  
-|user_id|integer|null: false, foreign_key: true|  
-|comment_id|integer|null: false, foreign_key: true|   
+|groupname|string|null: fales|
 Association　　
 has_many :users　　
 has_many :comments　　
