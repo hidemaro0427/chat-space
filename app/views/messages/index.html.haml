@@ -1,0 +1,24 @@
+
+
+= render 'messages/side_bar'
+
+= render 'messages/chat_title'
+
+.main
+  .main__user
+    test-user
+  .main__message
+    こんにちは！
+  .back
+  .form
+    %form
+      %input.form__message
+      .form__icon
+        %label.form__icon__image
+          = fa_icon "image"
+          %input.out{type: "file"}
+        %input.send{type: "submit", value: "Send"}
+            
+            
+            
+

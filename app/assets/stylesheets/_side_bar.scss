@@ -1,0 +1,51 @@
+html, body{
+  height: 100%;
+}
+
+
+.side-bar{
+  background-color: #2f3e51;
+  color: #ffffff;
+  float: left;
+  height: 100%;
+  padding: 20px;
+  width: 260px;
+  
+}
+
+
+.user{
+  height: 70px;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+
+  &__name{
+    font-size: 50px;
+  }
+
+  &__icon{
+  margin:0 0 0 auto;
+  
+  }
+}
+
+.groups{
+  float: left;
+  
+  
+
+  .group{
+    
+
+
+    &__name{
+      font-size: 15px;
+      padding: 20px 0 40px;
+      
+    }
+    &__message{
+      font-size: 11px;
+    }
+  }
+}
