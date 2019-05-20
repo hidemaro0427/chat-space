@@ -32,9 +32,9 @@ comments テーブル
 |group_ip|integer|null: false, foreign,key true|
 |image|string|  
 |text|text|  
-Association　　
-belongs_to :user　　
-belongs_to :group　　
+Association
+belongs_to :user
+belongs_to :group
 
 usersテーブル
 
@@ -43,19 +43,19 @@ usersテーブル
 |id|integer|null: fales, unique: true|    
 |E-maill|string|null: fales, unique: true|    
 |name|string|null: fales|  
-Association　　　
+Association
 has_many :comments
 has_many :groups,through: members
-has_many :members　
+has_many :members
 
 groupテーブル
 
 |Column|Type|Options|   
 |------|----|-------|  
 |groupname|string|null: fales|
-Association　　
+Association
 has_many :users,through: :members
-has_many :comments　　
+has_many :comments
 has_many :members
 
 membersテーブル
